@@ -157,3 +157,10 @@ Thumbs.db
 
 # Ancla project instructions (not for the repo)
 CLAUDE.md
+
+# PocketBase (binary + local data are per-machine; migrations are versioned)
+pocketbase/pocketbase
+pocketbase/CHANGELOG.md
+pocketbase/LICENSE.md
+pocketbase/pb_data/
+pocketbase/pb_logs/
