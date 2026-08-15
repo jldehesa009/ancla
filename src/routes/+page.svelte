@@ -16,6 +16,9 @@
 		<h1>Hola, {user.name || user.email}</h1>
 		<p>Sesión iniciada como <strong>{user.role}</strong>.</p>
 		<a href={resolve('/diagnostico')}>Ir al diagnóstico</a>
+		{#if user.role === 'editor_contenido'}
+			<a href={resolve('/admin')}>Panel de contenido</a>
+		{/if}
 		<button onclick={handleLogout}>Cerrar sesión</button>
 	{:else}
 		<h1>Ancla</h1>
