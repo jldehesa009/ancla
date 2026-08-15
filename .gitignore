@@ -141,3 +141,19 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# SvelteKit build output
+/build
+.vercel
+.netlify
+.wrangler
+
+# Env
+!.env.test
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ancla project instructions (not for the repo)
+CLAUDE.md
