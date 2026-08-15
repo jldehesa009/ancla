@@ -24,3 +24,21 @@ export interface DiagnosticResponseRecord extends RecordModel {
 	answers: Record<string, number>;
 	completed_at: string;
 }
+
+export type MetacognitionStatus = 'en_progreso' | 'evaluando' | 'completed';
+
+export interface MetacognitionResponseRecord extends RecordModel {
+	user: string;
+	status: MetacognitionStatus;
+	task_description: string;
+	predicted_duration_minutes: number;
+	predicted_difficulty: number;
+	predicted_success: number;
+	started_at: string;
+	mid_check_response: 'si' | 'no' | null;
+	actual_duration_minutes: number | null;
+	actual_difficulty: number | null;
+	actual_success: number | null;
+	reflection: string;
+	completed_at: string | null;
+}
