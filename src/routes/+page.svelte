@@ -34,6 +34,15 @@
 			Módulo 1 · Metacognición
 			{#if !hasDiagnostic}<span class="hint">Completa el diagnóstico primero</span>{/if}
 		</a>
+		<a href={resolve('/autorregulacion')} class:secondary-link={!hasDiagnostic}>
+			Módulo 2 · Autorregulación del estudio
+			{#if !hasDiagnostic}<span class="hint">Completa el diagnóstico primero</span>{/if}
+		</a>
+		<a href={resolve('/mapaconceptual')}>Módulo 3 · Mapas conceptuales</a>
+		<a href={resolve('/sistema')} class:secondary-link={!hasDiagnostic}>
+			Módulo 4 · Tu sistema de aprendizaje
+			{#if !hasDiagnostic}<span class="hint">Completa el diagnóstico primero</span>{/if}
+		</a>
 		{#if user.role === 'editor_contenido'}
 			<a href={resolve('/admin')}>Panel de contenido</a>
 		{/if}
